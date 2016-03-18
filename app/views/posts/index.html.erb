@@ -2,12 +2,12 @@
 
 <h2>Posts<%= link_to "(Add Post)",new_post_path %></h2>
 
+
 <% @posts.each do |post| %>
   <div class="title">
     <h3><%= link_to post.title, post %></h3>
     <% post.comments.each do |comment| %>
     <li><%=  "#{comment.contents}" %></li>
-  <% end %>
-    <h4>Comments</h4>
-  </div>
 <% end %>
+
+  </div>

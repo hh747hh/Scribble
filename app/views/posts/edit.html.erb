@@ -1,6 +1,9 @@
 <h2>Edit Post</h2>
 
-<%= form_for @post do |f| %>
+<%= render "form" %>
+
+
+<!-- <%= form_for @post do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
 
@@ -11,4 +14,4 @@
   <%= f.submit %>
 <% end %>
 
-<%= link_to "Delete", @post, method: :delete, class: "delete" %>
+<%= link_to "Delete", @post, method: :delete, class: "delete" %> -->

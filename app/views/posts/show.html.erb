@@ -1,0 +1,24 @@
+<h2><%=@post.title%></h2>
+<a href="/post<%= @post.id %>/edit">(edit)</a>
+<p><%= @post.contents %></p>
+
+<section>
+  <h4>Comments</h4>
+    <%@post.comments.each do |comment|%>
+    <li>
+    <comment.contents%>
+    </li>
+      <%end%>
+</section>
+
+
+    <p>add comment</p>
+    <%= form_for ([@post, @post.comments.new]) do |f| %>
+    <p>
+      <% f.label :content %>
+      <%= f.text_area :content %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+    <% end %>
