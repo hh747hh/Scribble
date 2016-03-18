@@ -4,10 +4,6 @@
 
 
 <% @posts.each do |post| %>
-  <div class="title">
     <h3><%= link_to post.title, post %></h3>
-    <% post.comments.each do |comment| %>
-    <li><%=  "#{comment.contents}" %></li>
-<% end %>
 
-  </div>
+<% end %>

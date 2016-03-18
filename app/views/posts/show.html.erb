@@ -15,8 +15,8 @@
     <p>add comment</p>
     <%= form_for ([@post, @post.comments.new]) do |f| %>
     <p>
-      <% f.label :content %>
-      <%= f.text_area :content %>
+      <% f.label :contents %>
+      <%= f.text_area :contents %>
     </p>
     <p>
       <%= f.submit %>
